@@ -4,6 +4,7 @@ import User from "../models/user.model";
 // const secret_key = process.env.JWT_SECRET_KEY
 const newToken = (user:any) => {
    
+    // return jwt.sign({user}, "process.env.JWT_SECRET_KEY");
     return jwt.sign({user}, "secret_key");
     // console.log(process.env.JWT_SECRET_KEY);
     
